@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameHub</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#121212;
+    color:white;
+    margin:0;
+}
+header{
+    background:#1e88e5;
+    padding:15px;
+    text-align:center;
+}
+.card{
+    background:#1f1f1f;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+}
+button{
+    background:#1e88e5;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🎮 GameHub</h1>
+</header>
+
+<div class="card">
+    <h2>Jogo em Destaque</h2>
+    <p>Roblox - Explore milhões de experiências criadas pela comunidade.</p>
+    <button onclick="curtir()">Curtir</button>
+    <p id="likes">Curtidas: 0</p>
+</div>
+
+<div class="card">
+    <h2>Notícias Gamer</h2>
+    <p>Confira as últimas novidades do mundo dos jogos.</p>
+</div>
+
+<script>
+let curtidas = 0;
+
+function curtir(){
+    curtidas++;
+    document.getElementById("likes").innerText =
+        "Curtidas: " + curtidas;
+}
+</script>
+
+</body>
+</html>
